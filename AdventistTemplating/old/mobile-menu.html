@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adventist Healthcare</title>
+    <link rel="stylesheet" type="text/css" href="css/mobile-menu.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jky2bxl.css">
+    <script src='https://code.jquery.com/jquery-1.12.4.min.js' integrity='sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ='crossorigin='anonymous'></script>
+    <script type='text/javascript' src='scripts/client.js'></script>
+    <script type='text/javascript' src='scripts/equalHeight.js'></script>
+</head>
+<body>
+    <header>
+        <div id="MobileHeaderWrap" class="ClearFx">
+            <ul class="MobileHeader">
+                <li class="MobileMenu">
+                    <button id="MenuButton"><img src="./images/icons/mobile-menu-icon.svg" alt="Mobile Menu"></button>
+                </li>
+        
+                <li class="MobileSearch">
+                    <button id="SearchButton" title="Search"><span class="Icon"></span><span class="Text">Search</span></button>
+                </li>
+
+                <li class="mobile-logo-wrap">
+                        <div class="mobile-logo">
+                            <a href="" alt=""><img src="images/Adventist-Logo.svg"></a>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+        <div class="tools-container">
+            <div class="geo-targeting">
+                <span class="set-location"><a href="#" alt="">Set Your Location</a></span>
+            </div>
+            <div class="header-top-right-wrap">
+                <ul class="secondary-nav-links">
+                    <li><a href="#" alt="">About Us</a></li>
+                    <li><a href="#" alt="">Ways to Give</a></li>
+                    <li><a href="#" alt="">Contact Us</a></li>
+                </ul>
+            
+                <div class="emergency-wait-times">
+                    <a href="" alt=""><span class="wait-time-text-bold">Emergency Room</span>
+                    <span class="wait-time-text">Wait Times</span></a>
+                </div>
+                <ul class="tools-links">
+                        <a href="" alt=""><li>pay my bill</li></a>
+                        <a href="" alt=""><li>patient portal</li></a>
+                </ul>
+                
+            </div>     
+         </div>
+    </header>
+
+
+    <!-- This is the beginning of the logo, main navigation, and search -->
+
+
+    <div class="bottom-header-wrap">
+        <div class="logo">
+            <a href="" alt=""><img src="images/Adventist-Logo.svg"></a>
+        </div>
+        <div id="SearchWrap" classw="ClearFix" role="search"> 
+            <div id="Search">
+                <form action="app/siteSearchResults.aspx" method="get" onsubmit="javascript:if(($id('SearchInput').value.length > 0) &amp;&amp; ($id('SearchInput').value != 'Search')) {return true;} else {alert('Please enter a search term.');$id('SearchInput').focus();return false;}">
+                
+                <legend class="Hide"></legend>
+                <input type="hidden" name="navigationNode" value="/0.2.1.1/">
+                <label class="Hide" for="SearchInput">Search</label>
+                <input maxlength="128" id="SearchInput" name="term" type="text" value="Search" onfocus="javascript:if(this.value=='Search') {this.value='';}" onblur="javascript:if (this.value=='') {this.value='Search';}">
+                <input type="image" alt="Search" class="ImgButton" src="images/icons/search-icon.svg">
+                </form>
+            </div>
+        </div>
+        <!-- <div class="bottom-header-wrap-right"> -->
+            <nav>
+                <div id="MainNav" class="ClearFix">
+                        <h2 class="Hide">
+                            Main Navigation
+                        </h2>
+                        <ul>
+                            <li class="First"><a href="/doctors/"><span>Find a Doctor</span></a></li>
+                            <li><a href="/services/"><span>Health Services</span></a></li>
+                            <li><a href="/locations/"><span>Locations</span></a></li>
+                            <li><a href="/calendar/"><span>Classes &amp; Events</span></a></li>
+                            <li class="Last"><a href="/patients-visitors/"><span>Patients &amp; Visitors</span></a></li>
+                        </ul>
+                </div>
+            </nav>
+        <!-- </div> -->
+    </div>
+    
+</body>
+</html>
