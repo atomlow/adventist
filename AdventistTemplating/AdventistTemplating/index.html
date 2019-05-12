@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adventist Healthcare</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jky2bxl.css">
+    <script src='https://code.jquery.com/jquery-1.12.4.min.js' integrity='sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ='crossorigin='anonymous'></script>
+    <script type='text/javascript' src='scripts/client.js'></script>
+    <script type='text/javascript' src='scripts/equalHeight.js'></script>
+</head>
+<body>
+    <header>
+        <div id="MobileHeaderWrap" class="ClearFx">
+            <ul class="MobileHeader">
+                <li class="MobileMenu">
+                    <button id="MenuButton"><img src="./images/icons/mobile-menu-icon.svg" alt="Mobile Menu"></button>
+                </li>
+        
+                <li class="MobileSearch">
+                    <button id="SearchButton" title="Search"><span class="Icon"></span><span class="Text">Search</span></button>
+                </li>
+
+                <li class="mobile-logo-wrap">
+                    <div class="mobile-logo">
+                        <a href="" alt=""><img src="images/Adventist-Logo.svg"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="tools-container ClearFix">
+            <div class="geo-targeting">
+                <span class="set-location"><a href="#" alt="">Set Your Location</a></span>
+            </div>
+            <div class="header-top-right-wrap">
+                <ul class="secondary-nav-links">
+                    <li><a href="#" alt="">About Us</a></li>
+                    <li><a href="#" alt="">Ways to Give</a></li>
+                    <li><a href="#" alt="">Contact Us</a></li>
+                </ul>
+            
+                <div class="emergency-wait-times">
+                    <a href="" alt=""><span class="wait-time-bold">Emergency Room</span>
+                    <span class="wait-time">Wait Times</span></a>
+                </div>
+                <ul class="tools-links">
+                    <a href="" alt=""><li>pay my bill</li></a>
+                    <a href="" alt=""><li>patient portal</li></a>
+                </ul>
+            </div>     
+        </div>
+    </header>
+
+
+    <!-- This is the beginning of the logo, main navigation, and search -->
+
+    <div class="BodyWrap">
+        
+        <div class="bottom-header-wrap">
+            <div class="header-content-wrap ClearFix">
+                <div class="logo">
+                    <a href="" alt=""><img src="images/Adventist-Logo.svg"></a>
+                </div>
+                <div id="SearchWrap" classw="ClearFix" role="search"> 
+                    <div id="Search">
+                        <form action="app/siteSearchResults.aspx" method="get" onsubmit="javascript:if(($id('SearchInput').value.length > 0) &amp;&amp; ($id('SearchInput').value != 'Search')) {return true;} else {alert('Please enter a search term.');$id('SearchInput').focus();return false;}">
+                        
+                        <legend class="Hide"></legend>
+                        <input type="hidden" name="navigationNode" value="/0.2.1.1/">
+                        <label class="Hide" for="SearchInput">Search</label>
+                        <input maxlength="128" id="SearchInput" name="term" type="text" value="Search" onfocus="javascript:if(this.value=='Search') {this.value='';}" onblur="javascript:if (this.value=='') {this.value='Search';}">
+                        <input type="image" alt="Search" class="ImgButton" src="images/icons/search-icon.svg">
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="bottom-header-wrap-right"> -->
+                    <nav>
+                        <div id="MainNav">
+                                <h2 class="Hide">
+                                    Main Navigation
+                                </h2>
+                                <ul>
+                                    <li class="First"><a href="/doctors/"><span>Find a Doctor</span></a></li>
+                                    <li><a href="/services/"><span>Health Services</span></a></li>
+                                    <li><a href="/locations/"><span>Locations</span></a></li>
+                                    <li><a href="/calendar/"><span>Classes &amp; Events</span></a></li>
+                                    <li class="Last"><a href="/patients-visitors/"><span>Patients &amp; Visitors</span></a>
+                                        <ul>
+                                            <li><a href="http://www.google.com">Preregistration</a></li>
+                                            <li><a href="http://www.google.com">Advance Directives</a></li>
+                                            <li><a href="http://www.google.com">High-Quality Care</a></li>
+                                            <li><a href="http://www.google.com">Insurance</a></li>
+                                            <li><a href="http://www.google.com">Estimated Hospital Charges</a></li>
+                                            <li><a href="http://www.google.com">Billing & Financial Assistance</a></li>
+                                            <li><a href="http://www.google.com">Send a Cheer Card</a></li>
+                                            <li><a href="http://www.google.com">Wireless Internet</a></li>
+                                            <li><a href="http://www.google.com">Smoking Policy</a></li>
+                                            <li><a href="http://www.google.com">Spiritual Care</a></li>
+                                            <li><a href="http://www.google.com">Patient Feedback</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </div>
+                    </nav>
+            </div>
+        </div>
+        
+        <div class="full-width-rule"></div>
+        <div class="hero">
+            <h1 class="hero-text">How Can We Help You?</h1>
+            <a href=""></a>
+        </div>
+
+
+        <!-- Patient Journey Link/Icon Section -->
+
+
+        <div class="patient-journey-links-wrap">
+            
+            <a class="link-wrap" href="#">
+                <div class="patient-journey-link icon1">
+                <span>I need urgent or emergency care</span></div>
+            </a>
+
+            <a class="link-wrap" href="#">
+                <div class="patient-journey-link icon2">
+                <span role="text">I need to find a primary care doctor</span></div>
+            </a>
+
+            <a class="link-wrap" href="#">
+                    <div class="patient-journey-link icon3">
+                    <span role="text">I want to find specialty care</span></div>
+            </a>
+
+            <a class="link-wrap" href="#">
+                    <div class="patient-journey-link icon4">
+                    <span role="text">I want to live a healthy life</span></div>
+            </a>
+
+        </div>
+    
+
+        <!-- Search For Location Section -->
+
+
+        <div class="color-bar-wrap ClearFix">
+            <div class="color-bar color-1">&nbsp;</div>
+            <div class="color-bar color-2">&nbsp;</div>
+            <div class="color-bar color-3">&nbsp;</div>
+            <div class="color-bar color-4">&nbsp;</div>
+        </div>
+
+    
+
+        <div class="hp-search-location-wrap">
+            <div class="search-header-wrap"></div>
+            <h2 class="search">Search for a Location</h2>
+            <div class="header-rule"></div>
+            <div class="dropdown-menu">
+                <input type="checkbox" id="menu" />
+                <label for="menu">Select a Location&#8230;</label>
+                <div class="menu-content"> 
+                    <ul>
+                        <li><a href="http://www.google.com">Cancer Centers</a></li>
+                        <li><a href="http://www.google.com">Doctor's Offices - Primary care</a></li>
+                        <li><a href="http://www.google.com">Doctor's Offices - Specialists</a></li>
+                        <li><a href="http://www.google.com">Emergency Rooms</a></li>
+                        <li><a href="http://www.google.com">Home Health Care Offices</a></li>
+                        <li><a href="http://www.google.com">Hospitals</a></li>
+                        <li><a href="http://www.google.com">Imaging Centers</a></li>
+                        <li><a href="http://www.google.com">Joint Replacement Centers</a></li>
+                        <li><a href="http://www.google.com">Mental Health Hospitals & Clinics</a></li>
+                        <li><a href="http://www.google.com">Rehabilitation Hospitals & Clinics</a></li>
+                        <li><a href="http://www.google.com">Surgery Hospitals</a></li>
+                        <li><a href="http://www.google.com">Urgent Care Centers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            
+        
+
+        <div class="color-bar-wrap ClearFix">
+            <div class="color-bar color-1">&nbsp;</div>
+            <div class="color-bar color-2">&nbsp;</div>
+            <div class="color-bar color-3">&nbsp;</div>
+            <div class="color-bar color-4">&nbsp;</div>
+        </div>
+
+
+        <!-- Promotional Section-->
+
+
+        <div class="two-column-wrap">
+            <div class="two-column-image-wrap-right">
+                <img src="images/colorectal-cancer-month.jpg">
+            </div>
+            <div class="two-column-content-wrap-left">
+                <div class="header-wrap">
+                    <h2 class="hp-promotional">Colorectal Cancer Awareness Month</h2>
+                    <div class="header-rule"></div>
+                </div>
+                <p class="hp-promotional">Did you know that colorectal cancer is the third most commonly diagnosed cancer in both men and women? But with early screening and testing, <strong>colon cancer is preventable, treatable and beatable.</strong></p>
+                    <p class="hp-promotional">Complete our FREE Colorectal Cancer Risk Assessment by <strong>15 for a chance to win a $500 Target Gift Card!!</strong></p>
+                </p>
+                <button class="button-flat">Launch Assessment</button>
+
+            </div>
+
+        </div>    
+
+
+        <!-- Classes and Events-->
+
+
+        <div class="two-column-wrap">
+            <div class="two-column-image-wrap-left">
+                    <img src="images/mom-baby.jpg">
+            </div>
+            <div class="two-column-content-wrap-right">
+                <div class="header-wrap">
+                    <h2 class="hp-events">Classes & Events</h2>
+                    <div class="header-rule"></div>
+                </div>
+                <p class="hp-events">Did you know that colorectal cancer is the third most commonly diagnosed cancer in both men and women? But with early screening and testing, <b>colon cancer is preventable, treatable and beatable.</b></p>
+                    <p class="hp-events">Complete our FREE Colorectal Cancer Risk Assessment by <b>April 15 for a chance to win a $500 Target Gift Card!!</b></p>
+                </p>
+                <button class="button-flat">More Events</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Specialized Medical Services-->
+
+
+        <div class="two-column-wrap">
+                <div class="two-column-image-wrap-right">
+                    <img src="images/cardiac-surgery.jpg">
+                </div>
+                <div class="two-column-content-wrap-left">
+                    <div class="header-wrap">
+                        <h2 class="hp-promotional">Specialized Medical Services</h2>
+                        <div class="header-rule"></div>
+                    </div>
+                    <p class="hp-promotional">Did you know that colorectal cancer is the third most commonly diagnosed cancer in both men and women? But with early screening and testing, <strong>colon cancer is preventable, treatable and beatable.</strong></p>
+                        <p class="hp-promotional">Complete our FREE Colorectal Cancer Risk Assessment by <b>April 15 for a chance to win a $500 Target Gift Card!!</b></p>
+                    </p>
+                    <button class="button-flat">View All Services</button>
+        
+                </div>
+        
+        </div>
+
+    
+        <!--In The News-->
+
+
+        <div class="full-width-background">
+            <div class="header-wrap">
+                <h2 class="news">In The News</h2>
+                <div class="header-rule"></div>
+            </div>
+            <div class="three-column-wrap">
+                <div class="story-wrap">
+                    <a href="" alt=""><img src="images/news-womc-main.jpg"></a>
+                    <div class="news-content-wrap">
+                        <div class="date-wrap">
+                            <span class="post-title"><a href="" alt="">news</a></span>
+                            <span class="date">March 10, 2019</span>
+                        </div>
+                        <div class="news-headline"><a href="" alt="">Adventist HealthCare Rehabilitation Receives White Oak Certificate of Need Approval</a></div>
+                        <p class="news-intro-copy">Adventist HealthCare Rehabilitation is excited to announce it has received approval for its Certificate of Need from the Maryland Health Care Commission to move its services from Takoma Park to Adventist HealthCare.</p>
+                            <div class="more-content-link"><a href="#">more news stories ></a></div>
+                    </div>
+                </div>
+                <div class="story-wrap">
+                    <a href="" alt=""><img src="images/running-627x376.jpg"></a>
+                    <div class="news-content-wrap">
+                        <div class="date-wrap">
+                            <span class="post-title"><a href="" alt="">patient stories</a></span>
+                            <span class="date">January 04, 2019</span>
+                        </div>
+                        <div class="news-headline"><a href="" alt="">Moving - and Lifting - Beyond Amputation</a></div>
+                        <p class="news-intro-copy">Colin Potts was enjoying an active and fulfilling career as a chef in the summer of 2000, when a misstep on his home staircase injured his left foot.</p>
+                        <div class="more-content-link"><a href="#">more patient stories ></a></div>
+                    </div>
+                </div>
+                <div class="story-wrap">
+                    <a href="" alt=""><img src="images/truck-627x376.jpg"></a>
+                    <div class="news-content-wrap">
+                        <div class="date-wrap">
+                            <span class="post-title"><a href="" alt="">blog</a></span>
+                            <span class="date">March 04, 2019</span>
+                        </div>
+                        <div class="news-headline"><a href="" alt="">Stay Safe Running This Spring</a></div>
+                        <p class="news-intro-copy">With spring weather upon us, you might be thinking about starting a running routine. Adventist HealthCare Rehabilitation physical therapist Richard Singer, PT, CMTPT, shares a few tips to help runners stay safe and avoid injury.</p>
+                        <div class="more-content-link"><a href="#">more blog posts ></a></div>
+                    </div>
+                </div>
+            </div><!--end of three column wrap-->
+        </div><!--end of In The News-->
+
+
+
+        <!--Adventist Quotes Section-->
+
+        <div class="full-width-background-slider">
+            <div></div>
+
+        </div>
+
+        <!--Footer-->
+
+            <footer>
+                <div class="email-full-width-background">
+                    <div class="email-wrap">
+                        <p class="email-hp">Sign up for updates about Adventist HealthCare 
+                            and get health tips and news articles in your inbox.</p>
+                            <div class="email-input-address">
+                                <input type="text" id="emailAddress" email="address" placeholder="Enter email address">
+                            </div>
+                    </div>
+                </div>
+                <div class="color-bar-wrap">
+                    <div class="color-bar color-1">&nbsp;</div>
+                    <div class="color-bar color-2">&nbsp;</div>
+                    <div class="color-bar color-3">&nbsp;</div>
+                    <div class="color-bar color-4">&nbsp;</div>
+                </div>
+                <div class="bottom-footer-wrap">
+                    <div class="footer-tagline-wrap">
+
+                        <div class="footer-tagline">
+                            <p>We extend God's care through the ministry of physical, mental and spiritual healing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-three-column-wrap">
+                        <div class="footer-address-wrap">
+                            <div class="footer-address">
+                                <span>Adventist HealthCare</span>
+                                <span>820 West Diamond Ave.</span>
+                                <span>Suite 600</span>
+                                <span>Gaithersburg, MD 20878</span>
+                            </div>
+                            <div class="footer-phone">
+                                <span>301-315-3030</span>
+                            </div>
+                            <div class="contact-us">
+                                <a href="#">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="" alt="">Newsroom</a></li>
+                                <li><a href="" alt="">For Healthcare Professionals</a></li>
+                                <li><a href="" alt="">High-Quality Care</a></li>
+                                <li><a href="" alt="">Patient Privacy</a></li>
+                                <li><a href="" alt="">Patient Nondiscrimination</a></li>
+                                <li><a href="" alt="">Website Privacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="connect-with-us">
+                            <ul>
+                                <li><a href="#"><img src="images/icons/Facebook.svg"></a></li>
+                                <li><a href="#"><img src="images/icons/twitter.svg"></a></li>
+                                <li><a href="#"><img src="images/icons/youtube.svg"></a></li>
+                                <li><a href="#"><img src="images/icons/instagram.svg"></a></li>
+                                <li><a href="#"><img src="images/icons/linkedin.svg"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright"><p>© Adventist HealthCare 2019</p></div>
+                </div>
+            </footer>
+    </div> <!-- End BodyWrap -->
+</body>
+</html>
