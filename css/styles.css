@@ -480,5 +480,5 @@ nav { text-align: center; margin: 0px; }
 .Small .bottom-footer-wrap .footer-three-column-wrap .connect-with-us ul { padding-left: 0; }
 
 /* Small (mobile) end */
-@media screen and (max-width: 520px) { .link-wrap { padding: 20px 4%; } }
+@media only screen and (max-width: 516px) { .Small a.link-wrap { padding: 20px 2%; } }
 /*# sourceMappingURL=styles.css.map */

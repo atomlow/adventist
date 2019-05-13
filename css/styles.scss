@@ -436,6 +436,7 @@ nav {
                 background: url("../images/icons/bike-icon-hover.svg") no-repeat center;
             }
         }
+        
     } // end of a.link-wrap
 } // end of .patient-journey-links-wrap
 
@@ -1107,6 +1108,8 @@ nav {
 
 /* Mobile Menu */
 
+
+
 .Small {
 
     #MobileHeaderWrap {
@@ -1564,11 +1567,23 @@ nav {
 
 } /* Small (mobile) end */
 
-
-@media screen and (max-width: 520px) {  
-
-    .link-wrap {
-        padding: 20px 4%;
+@media only screen and (max-width: 516px) {
+    .Small a.link-wrap  {
+        padding: 20px 2%;
     }
-
 }
+
+// @media only screen and (max-width: 516px) {
+//     a.link-wrap  {
+//         padding: 20px 8%;
+//     }
+// }
+
+
+// @media screen and (max-width: 520px) {  
+
+//     .link-wrap {
+//         padding: 20px 4%;
+//     }
+
+// }
