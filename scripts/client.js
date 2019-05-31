@@ -126,7 +126,15 @@ $(document).ready(function () {
 
 });
 
+
+
 $(window).load(function () {
     equalHeight.equalHeight($('.news-content-wrap'));
 });
 
+// Slick Slider
+
+$(document).ready(function(){
+    $('.quote-content-wrap').slick({
+    });
+});

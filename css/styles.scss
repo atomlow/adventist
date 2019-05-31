@@ -266,7 +266,9 @@ nav {
         
         &:hover ul{
             visibility: visible; // this makes the dropdown menu show on hover
+            transition-delay: 0.5s;
         }
+
         a {
             text-decoration: none;
             color: #000;
@@ -310,7 +312,7 @@ nav {
                 }
                 &:hover {
                     background-color: #efefef;
-                    transition: all 0.5s ease;
+                    // transition: all 0.5s ease;
                 }
             
                 
@@ -512,7 +514,7 @@ nav {
     position: absolute;
     background: #fff;
     width: 45%;
-    margin: 50px auto 0;
+    margin: 50px auto;
     border-radius: 4px;
     padding: 0px 0px;
     box-shadow: -1px 4px 7px rgba(0,0,0,0.1);
@@ -619,6 +621,7 @@ nav {
         margin: 12% auto;
         min-width: 310px;
         background-color: transparent;
+        cursor: pointer;
         &:hover {
             background-color: $lightBlue;
             color: #fff;
@@ -800,9 +803,79 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 550px;
-    /* background-attachment: fixed; */
+    // background-attachment: fixed;
+}
 
+.quote-content-wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 65px;
+}
+
+.quote-text {
+    font-size: 1.7em;
+    color: #fff;
+    text-align: center;
+    &::before {
+        content:"";
+        display: block;
+        background: url("../images/icons/quote-icon.svg") no-repeat;
+        opacity: 0.5;
+        width: 30px;
+        height: 30px;
+        color: #eee;
+        // border: 1px solid #707070;
+        margin: 0px auto 80px;
+    }
+}
+
+
+.by-line {
+    text-align: center;
+    color: #fff;
+    margin: 20px 0 90px 0;
+    font-size: 1.1em;
+    &::after {
+        content:"";
+        display: block;
+        background: url("../images/icons/yelp-logo.svg") no-repeat;
+        width: 26px;
+        height: 36px;
+        color: #eee;
+        text-align: center;
+        // border: 1px solid #707070;
+        margin: 52px auto;
+    }
+}
+
+.share-quote-button {
+    display: block;
+    font-size: 0.9em;
+    cursor: pointer;
+    color: #fff;
+    width: 180px;
+    border: none;
+    margin: 0 auto;
+    padding: 6px 0px 6px 14px;
+    border-radius: 4px 4px 0 0;
+    background-color: rgba(58,105,211,.56);
+    &:hover {
+        background-color: rgba(58,105,211,1);
+    }
+    
+    .button-text {
+        text-align: center;
+        float: left;
+        margin: 1px 0 0 15px;
+    }
+    &::after {
+        content:"";
+        display: inline-block;
+        background: url("../images/icons/circle-arrow.svg") no-repeat;
+        height: 18px;
+        width: 18px;
+        vertical-align: middle;
+    }
 }
 
 
@@ -1433,7 +1506,7 @@ nav {
 
     .dropdown-menu {
         width: 64%;
-        left: 16%;
+        left: 18%;
     }
 
     .two-column-image-wrap-right {
