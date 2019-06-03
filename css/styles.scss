@@ -806,35 +806,43 @@ nav {
     // background-attachment: fixed;
 }
 
-.quote-content-wrap {
-    max-width: 1440px;
+.quote-icon {
+    display: block;
+    // background: url("../images/icons/quote-icon.svg") no-repeat;
+    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    color: #eee;
     margin: 0 auto;
-    padding-top: 65px;
+    // border: 1px solid #707070;
+    padding: 70px 0 0 0;
 }
 
-.quote-text {
+.testimonial-slider {
+    max-width: 1440px;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 65px 30px 0 30px;
+    @media only screen and (max-width: 400px) {
+        max-width: 400px;
+    }
+
+}
+
+.testimonial.Yelp {
     font-size: 1.7em;
     color: #fff;
     text-align: center;
-    &::before {
-        content:"";
-        display: block;
-        background: url("../images/icons/quote-icon.svg") no-repeat;
-        opacity: 0.5;
-        width: 30px;
-        height: 30px;
-        color: #eee;
-        // border: 1px solid #707070;
-        margin: 0px auto 80px;
-    }
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
 .by-line {
+    display: block;
     text-align: center;
     color: #fff;
-    margin: 20px 0 90px 0;
-    font-size: 1.1em;
+    margin: 20px 0 20px 0;
+    font-size: 0.6em;
     &::after {
         content:"";
         display: block;
@@ -844,7 +852,7 @@ nav {
         color: #eee;
         text-align: center;
         // border: 1px solid #707070;
-        margin: 52px auto;
+        margin: 30px auto 0;
     }
 }
 
