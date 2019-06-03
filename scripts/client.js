@@ -134,7 +134,11 @@ $(window).load(function () {
 
 // Slick Slider
 
-$(document).ready(function(){
-    $('.quote-content-wrap').slick({
+$(window).load(function(){
+    $(".testimonial-slider").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1
     });
 });
